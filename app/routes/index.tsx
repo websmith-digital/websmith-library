@@ -16,7 +16,10 @@ export default function Index() {
             <p>Here are some of my pets...</p>
             <ul>
                 {pets.map(pet => (
-                    <li key={pet.name}>{pet.name}</li>
+                    <li key={pet.name}>
+                        {pet.name}, who is a {pet.category}, and is level{" "}
+                        {pet.cuteness} cuteness.
+                    </li>
                 ))}
             </ul>
         </>
